@@ -1,0 +1,16 @@
+name: Smoke Test
+description: Runs the smoke test on Debian packages
+author: https://github.com/open-switch
+requirements:
+  - ansible
+configuration:
+  properties:
+    download:
+      type: string
+    slug:
+      type: boolean
+    distribution:
+      type: string
+  required:
+    - download
+  additionalProperties: false
