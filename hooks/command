@@ -48,6 +48,7 @@ echo "--- Getting test scripts"
 git clone https://github.com/open-switch/opx-test "$smoke"
 
 echo "--- Getting packages to test"
+rm -rf "$DL"
 buildkite-agent artifact download "$DL/*" .
 
 echo "--- Waiting for instance"
