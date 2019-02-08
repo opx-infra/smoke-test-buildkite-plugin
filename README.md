@@ -10,9 +10,9 @@ steps:
     artifacts: "pool/stretch-amd64/*"
   - wait
   - plugins:
-      opx-infra/smoke-test#v0.1.0:
-        download: pool/stretch-amd64
-        distribution: stretch
+      - opx-infra/smoke-test#v0.1.0:
+          download: pool/stretch-amd64
+          distribution: stretch
 ```
 
 ## Configuration
